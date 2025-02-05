@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4-10.first-order</title>
+</head>
+<script>
+    function validate(obj, lowval, hival) {
+        if (obj.value < lowval || obj.value > hival) console.log("잘못된 값!");
+        
+    }
+</script>
+<body>
+     <p>18가 99 사이 수 입력:</p>
+    <input type="text" name="age" size="3" onchange="validate(this, 18,99);">
+</body>
+</html>
